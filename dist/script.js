@@ -1,8 +1,17 @@
-const menubtn = document.querySelector("#btn-menu")
+const btnmenu = document.querySelector("#btn-menu")
+const btnclose = document.querySelector("#btn-close")
 const slidebar = document.querySelector("#slidebar")
 
-menubtn.addEventListener("click", () => {
+btnmenu.addEventListener("click", () => {
     slidebar.style.display = "flex"
+    btnmenu.style.display = "none"
+    btnclose.style.display = "flex"
+})
+
+btnclose.addEventListener("click", () => {
+    slidebar.style.display = "none"
+    btnmenu.style.display = "flex"
+    btnclose.style.display = "none"
 })
 
 var swiper = new Swiper(".mySwiper", {
@@ -10,12 +19,12 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 10,
     pagination: {
         el: ".swiper-pagination",
-        dynanmicBullets:true,
+        dynanmicBullets: true,
         clickable: true,
     },
     autoplay: {
-        delay : 5000,
-        clickable:true
+        delay: 5000,
+        clickable: true
     },
 
     breakpoints: {

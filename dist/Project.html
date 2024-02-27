@@ -24,7 +24,9 @@
 </head>
 
 <body class="bg-slate-200 m-auto">
-    <nav class="max-w-full h-14  shadow-2xl flex justify-between items-center md:fixed top-0 w-full  px-4 md:px-4
+
+    <!-- Navbar Here -->
+    <nav class="max-w-full h-16 px-5 shadow-2xl flex justify-between items-center md:fixed top-0 w-full md:px-5
       bg-slate-800 text-white border-e-red-200">
         <div class="text-2xl font-medium italic">
             Naraz.Com
@@ -36,15 +38,22 @@
             <li>Service</li>
         </ul>
 
-        <div class="hidden md:flex bg-indigo-700 text-white p-3 rounded text-center text-base hover:bg-indigo-600 hover:cursor-pointer">
+        <div
+            class="hidden md:flex bg-indigo-700text-white p-3 rounded text-center text-base hover:bg-indigo-600 hover:cursor-pointer">
             Login/Signin
         </div>
         <div id="btn-menu" class="md:hidden text-3xl">
             <a href="#">&#8801;</a>
         </div>
-    </nav>
 
-    <!-- Slide Navbar -->
+        <div id="btn-close" class="hidden text-2xl">
+            <a href="#">&#10005;</a>
+        </div>
+        
+    </nav>
+    <!-- End Navbar Here -->
+
+    <!-- Slide Navbar Here-->
     <ul id="slidebar"
         class="md:hidden hidden flex-col items-center justify-items-center hover:cursor-pointer gap-4 text-xl font-medium cursor-pointe w-full absolute bg-slate-800 text-white">
         <li class="mt-2">Home</li>
@@ -52,9 +61,11 @@
         <li>Category</li>
         <li class="mb-4">Service</li>
     </ul>
+    <!--End Slide Navbar Here -->
 
+    <!--  Cycles Content Here -->
     <div
-        class="w-11/12 flex items-center justify-items-center place-content-center gap-3 flex-wrap md:justify-center mx-auto md:mt-[80px]">
+        class="w-11/12 flex mt-5 items-center justify-items-center place-content-center gap-3 flex-wrap md:justify-center mx-auto md:mt-[80px]">
 
         <div class="w-[300px] rounded-md shadow-sm hover:shadow-xl  flex-col bg-white">
             <div class="">
@@ -168,7 +179,9 @@
             </div>
         </div>
     </div>
+    <!--End Cycles Content Here-->
 
+    <!-- Bike Content Here -->
     <div class="flex w-11/12 my-4 gap-2 flex-wrap place-content-center mt-5 mx-auto">
 
         <div class="grid-col-4 p-2 bg-white border-2 rounded-md border-gray-500">
@@ -298,7 +311,39 @@
         </div>
 
     </div>
+    <!-- End Bike Content Here -->
 
+    <!-- Login Form Here -->
+    <div class="w-full min-h-full">
+        <div class="w-8/12 min-h-full  m-auto ">
+            <div
+                class="flex flex-col gap-2 max-w-md md:max-w-sm border-2 shadow-lg bg-slate-100  px-8 py-8 rounded-lg  m-auto ">
+                <div
+                    class="bg-white flex place-content-center items-center gap-1 py-2 rounded-md border-2  border-gray-400">
+                    <img class="w-6 h-6 object-fill" src="assets/google-icon.png" alt="">
+                    <p class="text-base">Log in With Google</p>
+                </div>
+                <div
+                    class="bg-white flex place-content-center items-center gap-1 py-2 rounded-md border-2  border-gray-400">
+                    <img class="w-6 h-6 object-fill" src="assets/facebook-icon.png" alt="">
+                    <p class="text-base">Log in With Facebook</p>
+                </div>
+                <div class="border-t-2 border-gray-400 mt-2"></div>
+                <div class="flex flex-col gap-2 ">
+                    <input class="py-2 rounded-md pl-2 border-gray-400 border-2" type="email" placeholder="Email" required>
+                    <input class="py-2 rounded-md pl-2 border-gray-400 border-2" type="password" placeholder="Password">
+                    <label class="text-indigo-500" for=""><a href="#">Forget password ?</a></label>
+                    <button
+                        class="py-2 rounded-md bg-indigo-700 hover:bg-indigo-600 text-base font-medium text-white">Log
+                        in</button>
+                    <label class="text-indigo-500 text-center hover:cursor-pointer" for=""><a href="#">Create an account</a></label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End login Form Here -->
+    <!-- Footer Start Here -->
     <footer class="w-full mt-10 bg-slate-700">
 
         <div class="flex flex-col place-content-center hover:cursor-pointer md:flex-row justify-evenly flex-wrap">
@@ -385,7 +430,9 @@
         </div>
 
     </footer>
+    <!-- Footer End Here -->
 
+    <!-- Script Link Here -->
     <script src="script.js"></script>
     <script src="swiper-bundle.min.js"></script>
 </body>
