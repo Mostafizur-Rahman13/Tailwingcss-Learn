@@ -32,14 +32,14 @@
             Naraz.Com
         </div>
         <ul class="hidden md:flex gap-4 text-xl font-medium cursor-pointer">
-            <li>Home</li>
-            <li>Product</li>
-            <li>Category</li>
-            <li>Service</li>
+            <li class="hover:text-indigo-300">Home</li>
+            <li class="hover:text-indigo-300" id="navcategoryid">Product</li>
+            <li class="hover:text-indigo-300">Category</li>
+            <li class="hover:text-indigo-300">Service</li>
         </ul>
 
         <div
-            class="hidden md:flex bg-indigo-700text-white p-3 rounded text-center text-base hover:bg-indigo-600 hover:cursor-pointer">
+            class="hidden md:flex bg-indigo-700text-white p-3 rounded text-center text-base bg-indigo-700 font-medium hover:bg-indigo-600 hover:cursor-pointer">
             Login/Signin
         </div>
         <div id="btn-menu" class="md:hidden text-3xl">
@@ -49,7 +49,7 @@
         <div id="btn-close" class="hidden text-2xl">
             <a href="#">&#10005;</a>
         </div>
-        
+
     </nav>
     <!-- End Navbar Here -->
 
@@ -330,13 +330,15 @@
                 </div>
                 <div class="border-t-2 border-gray-400 mt-2"></div>
                 <div class="flex flex-col gap-2 ">
-                    <input class="py-2 rounded-md pl-2 border-gray-400 border-2" type="email" placeholder="Email" required>
+                    <input class="py-2 rounded-md pl-2 border-gray-400 border-2" type="email" placeholder="Email"
+                        required>
                     <input class="py-2 rounded-md pl-2 border-gray-400 border-2" type="password" placeholder="Password">
                     <label class="text-indigo-500" for=""><a href="#">Forget password ?</a></label>
                     <button
                         class="py-2 rounded-md bg-indigo-700 hover:bg-indigo-600 text-base font-medium text-white">Log
                         in</button>
-                    <label class="text-indigo-500 text-center hover:cursor-pointer" for=""><a href="#">Create an account</a></label>
+                    <label class="text-indigo-500 text-center hover:cursor-pointer" for=""><a href="#">Create an
+                            account</a></label>
                 </div>
 
             </div>
@@ -430,11 +432,66 @@
         </div>
 
     </footer>
-    <!-- Footer End Here -->
+    <!-- End Footer Here -->
+    <!-- login Form Here -->
+    <div class="max-w-full max-h-fit">
+        <div id="categoryid"
+            class="w-9/12 md:hidden rounded-md shadow-md shadow-indigo-400 absolute top-[45px] left-[200px]  max-h-fit flex gap-2 mx-auto border-2 border-gray-400 ">
+            <div class="flex flex-wrap  justify-between mx-auto gap-8 my-2">
+
+                <div class="flex flex-col border-gray-200 rounded-sm border-2 p-2 bg-white hover:shadow-indigo-200 hover:shadow-2xl">
+                    <h4 class="text-center font-bold text-lg border-b-2 border-gray-400">Cycles</h4>
+                    <ul class="flex flex-col font-medium gap-1 mt-1">
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Mountain Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Electric Bicycles</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Road Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Hybrid Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Folding Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Comport Bikes</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col border-gray-200 rounded-sm border-2 p-2 bg-white hover:shadow-indigo-200 hover:shadow-2xl">
+                    <h4 class="text-center font-bold text-lg border-b-2 border-gray-400">Cycles</h4>
+                    <ul class="flex flex-col font-medium gap-1 mt-1">
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Mountain Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Electric Bicycles</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Road Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Hybrid Bikes</li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col border-gray-200 rounded-sm border-2 p-2 bg-white hover:shadow-indigo-200 hover:shadow-2xl">
+                    <h4 class="text-center font-bold text-lg border-b-2 border-gray-400">Moto Bikes</h4>
+                    <ul class="flex flex-col font-medium gap-1 mt-1">
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Mountain Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Electric Bicycles</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Road Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Hybrid Bikes</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col border-gray-200 rounded-sm border-2 p-2 bg-white hover:shadow-indigo-200 hover:shadow-2xl">
+                    <h4 class="text-center font-bold text-lg border-b-2 border-gray-400">Scooters</h4>
+                    <ul class="flex flex-col font-medium gap-1 mt-1">
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Mountain Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Electric Bicycles</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Road Bikes</li>
+                        <li class="hover:bg-indigo-500 hover:text-white rounded-sm px-1 hover:cursor-pointer hover:shadow-md hover:shadow-red-600">Hybrid Bikes</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- End Login Form Here -->
 
     <!-- Script Link Here -->
     <script src="script.js"></script>
     <script src="swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

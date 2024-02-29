@@ -1,6 +1,31 @@
 const btnmenu = document.querySelector("#btn-menu")
 const btnclose = document.querySelector("#btn-close")
 const slidebar = document.querySelector("#slidebar")
+const navcategoryid = document.querySelector("#navcategoryid")
+const categoryid = document.querySelector("#categoryid")
+
+navcategoryid.addEventListener("mouseover", () => {
+    categoryid.classList.remove("md:hidden");
+})
+
+
+
+
+setTimeout(() => {
+
+    navcategoryid.addEventListener("mouseleave", () => {
+        categoryid.classList.add("md:hidden");
+
+    })
+
+}, 2000);
+
+
+
+
+categoryid.addEventListener("mouseover", () => {
+    categoryid.classList.remove("md:hidden");
+})
 
 btnmenu.addEventListener("click", () => {
     slidebar.style.display = "flex"
