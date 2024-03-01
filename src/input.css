@@ -1,25 +1,46 @@
 @tailwind base;
-
-
-.btn {
-    @apply px-4 py-2 text-xl rounded-md;
-}
-
-.btn-red {
-    @apply  bg-red-700 text-white;
-}
-
-.btn-hover {
-    @apply hover:bg-red-600 hover:ring-2 hover:ring-purple-700 hover:border-none hover:outline-none hover:scale-110;
-}
-
-.btn-green{
-    @apply bg-green-700 text-white
-}
-
-.btn-hover {
-    @apply hover:bg-red-600 hover:ring-2 hover:ring-purple-700 hover:border-none hover:outline-none hover:-scale-x-110e-;
-}
-
-@tailwind utilities;
 @tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply px-4 py-2 text-xl rounded-md;
+    }
+
+    .btn-red {
+        @apply bg-red-700 text-white;
+    }
+
+    .btn-hover {
+        @apply hover:bg-red-600 hover:ring-2 hover:ring-purple-700 hover:border-none hover:outline-none;
+    }
+
+    .btn-green {
+        @apply bg-green-700 text-white;
+    }
+
+    .btn-hover {
+        @apply hover:bg-red-600 hover:ring-2 hover:ring-purple-700 hover:border-none hover:outline-none;
+    }
+}
+
+@layer base {}
+
+@layer utilities {}
+
+@variants hover, focus {
+    .content-auto {
+        content-visibility: auto;
+    }
+
+}
+
+@responsive {
+    .bg-gradient-brand {
+        background-image: linear-gradient(blue, green);
+    }
+}
+
+@screen sm {
+
+}
