@@ -5,7 +5,7 @@ const navcategoryid = document.querySelector("#navcategoryid")
 const categoryid = document.querySelector("#categoryid")
 
 navcategoryid.addEventListener("mouseover", () => {
-    categoryid.classList.remove("md:hidden");
+    categoryid.classList.remove("hidden");
 })
 
 
@@ -14,7 +14,7 @@ navcategoryid.addEventListener("mouseover", () => {
 setTimeout(() => {
 
     navcategoryid.addEventListener("mouseleave", () => {
-        categoryid.classList.add("md:hidden");
+        categoryid.classList.add("hidden");
 
     })
 
@@ -24,7 +24,7 @@ setTimeout(() => {
 
 
 categoryid.addEventListener("mouseover", () => {
-    categoryid.classList.remove("md:hidden");
+    categoryid.classList.remove("hidden");
 })
 
 btnmenu.addEventListener("click", () => {
